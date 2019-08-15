@@ -1,0 +1,5 @@
+>>> Using Docker Stack : Docker Stack is a method to run multiple-linked containers on a Swarm cluster.
+1. Specifying docker-compose.yml.
+2. Running the Docker Stack command.
+3. Verifying the services and containers.
+4. Removing the stack.
