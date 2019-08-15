@@ -1,0 +1,13 @@
+FROM python:2.7
+RUN mkdir -p /appWORKDIR /app
+COPY ./requirements.txt /app/
+RUN pip install -r requirements.txt
+CMD ["python", "main.py"]
+
+
+FROM ubuntu:latest
+LABEL author="sup"
+LABEL description="An example Dockerfile"
+RUN apt-get install python
+COPY hello-world.py
+CMD python hello-world.py
